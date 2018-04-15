@@ -66,6 +66,9 @@ The following is a detailed description of each layer:
 And the following is the code implementation of the above layers in Keras:
 
 ```python
+from keras.models import Sequential
+from keras.layers import Flatten, Dense, Lambda, Conv2D, Cropping2D, Dropout
+
 # Convolutional deep neural network based on the NVIDIA network.
 model = Sequential()
 model.add(Cropping2D(cropping=((70, 25), (0, 0))))
